@@ -4,21 +4,22 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class NewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_new); // res/layout 안에 있는 화면xml 파일을 가리킨다.
     }
 
     public void onButton1Clicked(View v) {
-        // 새 액티비티 화면으로 이동
-        Intent intent = new Intent(getApplicationContext(), NewActivity.class);
-        startActivity(intent);
+        // 메세지 노출
+        Toast.makeText(this, "돌아가기 버튼이 눌렸어요.", Toast.LENGTH_LONG).show();
+        finish();
     }
 
     public void onButton2Clicked(View v) {
