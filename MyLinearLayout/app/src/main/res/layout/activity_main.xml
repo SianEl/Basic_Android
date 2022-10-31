@@ -15,40 +15,25 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30sp"
+        android:layout_height="0dp"
+        android:layout_weight="4"
         android:text="Button" />
 
-    <!-- android:textSize : 텍스트의 크기를 설정하는 속성 단위는 sp -->
-
-    <LinearLayout
+    <Button
+        android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <!-- LinearLayout 안에 다른 orientation값을 갖는 LinearLayout을 넣어 복잡한 형태를 구현할 수 있다.  -->
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Button" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="Button" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Button" />
 
-        <!-- android:gravity = 뷰 내부의 정렬을 설정하는 속성 -->
+    <!-- layout_weight : 부모 LinearLayout의 orientation 방향으로 균등하게 컴포넌트가 차지하도록 하는 속성 -->
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:text="Button" />
-
-        <!-- android:layout_gravity : 뷰 자체가 부모에 대해 정렬을 설정하는 속성 -->
-
-    </LinearLayout>
 
 </LinearLayout>

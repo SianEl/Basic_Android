@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Button" />
+
+    <!-- relativeLayout에서 부모와의 관계를 설정하는 속성으로 layout_alignParent시리즈가 있다. -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button2"
+        android:layout_below="@id/button"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:text="Button" />
+    <!-- layout_below는 다른 컴포넌트의 아래에 붙여달라는 속성
+         layout_above는 다른 컴포넌트의 위쪽에 붙여달라는 속성성
+     -->
+
+</RelativeLayout>
